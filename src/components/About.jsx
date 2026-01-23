@@ -120,9 +120,9 @@ const About = () => {
             className="lg:col-span-4 glass-card glass-card-hover p-8"
           >
             <div className="h-full flex flex-col">
-              <h3 className="font-display text-xl font-bold text-text-primary mb-6">Quick Facts</h3>
-              <div className="space-y-6 flex-grow">
-                <div className="flex items-center gap-4">
+              <h3 className="font-display text-xl font-bold text-text-primary mb-8">Quick Facts</h3>
+              <div className="space-y-8 flex-grow">
+                <div className="flex items-center gap-4 pb-2">
                   <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
                     <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -130,43 +130,32 @@ const About = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-text-tertiary text-sm">Location</p>
+                    <p className="text-text-tertiary text-sm mb-1">Location</p>
                     <p className="text-text-primary font-medium">{portfolioData.personal.location}</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 pb-2">
                   <div className="w-10 h-10 rounded-lg bg-purple/10 flex items-center justify-center">
                     <svg className="w-5 h-5 text-purple" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-text-tertiary text-sm">Education</p>
+                    <p className="text-text-tertiary text-sm mb-1">Education</p>
                     <p className="text-text-primary font-medium">Duke Fuqua MBA</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 pb-2">
                   <div className="w-10 h-10 rounded-lg bg-warm/10 flex items-center justify-center">
                     <svg className="w-5 h-5 text-warm" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-text-tertiary text-sm">Experience</p>
+                    <p className="text-text-tertiary text-sm mb-1">Experience</p>
                     <p className="text-text-primary font-medium">2+ Years</p>
                   </div>
                 </div>
-              </div>
-              <div className="mt-6 pt-6 border-t border-border">
-                <a
-                  href={`mailto:${portfolioData.personal.email}`}
-                  className="flex items-center gap-2 text-accent hover:text-accent-light transition-colors group"
-                >
-                  <span className="font-medium">Get in touch</span>
-                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
               </div>
             </div>
           </motion.div>
