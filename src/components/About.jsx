@@ -142,7 +142,10 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-text-tertiary text-sm mb-1">Education</p>
-                    <p className="text-text-primary font-medium">Duke Fuqua MBA</p>
+                    <div className="text-text-primary font-medium">
+                      <p>Duke Fuqua MQM</p>
+                      <p>SSN College of Engineering IT</p>
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 pb-2">
@@ -153,7 +156,7 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-text-tertiary text-sm mb-1">Experience</p>
-                    <p className="text-text-primary font-medium">2+ Years</p>
+                    <p className="text-text-primary font-medium">2+ Years at Citibank</p>
                   </div>
                 </div>
               </div>

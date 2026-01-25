@@ -17,7 +17,7 @@ export const portfolioData = {
   ],
 
   about: {
-    bio: `I am a Master of Quantitative Management (Business Analytics) candidate at Duke University's Fuqua School of Business, with a strong background in software engineering and a growing specialization in data science and analytical problem-solving.
+    bio: `I am a student in the Master of Quantitiative Management Business Analytics at Duke University's Fuqua School of Business, with a strong background in software engineering and a growing specialization in data science and analytical problem-solving.
 
 Previously, I worked as a backend software engineer at Citibank, where I supported data-intensive systems within Trade and Treasury Services. My role involved building and maintaining scalable data ingestion pipelines, designing and optimizing SQL-based data models, and ensuring high data quality for regulatory and business-critical use cases. Working in a highly governed financial environment strengthened my ability to handle large, complex datasets with a strong emphasis on accuracy, reliability, and interpretability.
 
