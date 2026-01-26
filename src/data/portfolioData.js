@@ -17,16 +17,16 @@ export const portfolioData = {
   ],
 
   about: {
-    bio: `I am a student in the Master of Quantitiative Management Business Analytics at Duke University's Fuqua School of Business, with a strong background in software engineering and a growing specialization in data science and analytical problem-solving.
+    bio: `I am a student in Duke University’s Fuqua School of Business Master of Quantitative Management (Business Analytics) program, with a strong background in software engineering and a growing specialization in data science and analytical problem-solving.
 
-Previously, I worked as a backend software engineer at Citibank, where I supported data-intensive systems within Trade and Treasury Services. My role involved building and maintaining scalable data ingestion pipelines, designing and optimizing SQL-based data models, and ensuring high data quality for regulatory and business-critical use cases. Working in a highly governed financial environment strengthened my ability to handle large, complex datasets with a strong emphasis on accuracy, reliability, and interpretability.
+Previously, I worked as a backend software engineer at Citibank, where I supported data-intensive systems within Trade and Treasury Services. In this role, I built and maintained scalable data ingestion pipelines, designed and optimized SQL-based data models, and ensured high data quality for regulatory and business-critical use cases.
 
-As part of a microservices-based project, I designed and developed modular backend services that handled data ingestion, transformation, and validation across multiple system components. This work involved defining service boundaries, implementing API-based communication, and ensuring data consistency across services, while maintaining observability through logging and monitoring. The project strengthened my understanding of building scalable, distributed systems that support analytics-ready data flows and downstream analytical use cases.
+As part of a microservices-based project, I designed and developed modular backend services that handled data ingestion, transformation, and validation across multiple system components. I defined service boundaries, implemented API-based communication, and ensured data consistency across services, while maintaining observability through logging and monitoring. The project strengthened my understanding of scalable, distributed systems that support analytics-ready data flows and downstream analytical use cases.
 
 My interests lie at the intersection of data, technology, and business strategy. I enjoy using data to uncover patterns, generate insights, and inform decision-making—whether through exploratory analysis, building analytics-ready datasets, or translating business questions into measurable outcomes. I am particularly interested in applying statistical thinking, machine learning concepts, and analytical frameworks to real-world problems across marketing, product, and operations.
 
-I am currently seeking opportunities in data science, data analytics, or business analytics roles where I can combine my engineering foundation, analytical skill set, and business training to create impactful, data-driven solutions.`,
-    whatIDo: [
+I am currently seeking opportunities in data science, data engineering or data analytics roles where I can combine my engineering foundation, analytical skill set, and business training to create impactful, data-driven solutions.`   
+, whatIDo: [
       {
         title: 'Data Analytics Engineering',
         description: 'Designing and implementing data pipelines, ETL processes, and analytics systems',
