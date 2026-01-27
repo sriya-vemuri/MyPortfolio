@@ -162,25 +162,55 @@ const About = () => {
               </div>
             </div>
           </motion.div>
+        </motion.div>
 
-          {/* What I Do - 4 cards in a row */}
-          {portfolioData.about.whatIDo.map((item, index) => (
+        {/* I Specialise In Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-6"
+        >
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-100px' }}
+            className="glass-card p-6 lg:p-8"
+          >
             <motion.div
-              key={index}
-              variants={itemVariants}
-              className="lg:col-span-3 glass-card glass-card-hover p-6 group"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="mb-6"
             >
-              <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${accentColors[index % 4].bg} flex items-center justify-center mb-5 border ${accentColors[index % 4].border} ${accentColors[index % 4].text} group-hover:scale-110 transition-transform duration-300`}>
-                {iconMap[item.icon] || item.icon}
-              </div>
-              <h4 className="font-display text-lg font-bold text-text-primary mb-2">
-                {item.title}
-              </h4>
-              <p className="text-text-secondary text-sm leading-relaxed">
-                {item.description}
-              </p>
+              <h3 className="font-display text-3xl md:text-4xl font-bold text-text-primary">
+                I <span className="gradient-text">Specialise In</span>
+              </h3>
             </motion.div>
-          ))}
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {portfolioData.about.whatIDo.map((item, index) => (
+                <motion.div
+                  key={index}
+                  variants={itemVariants}
+                  className="glass-card glass-card-hover p-6 group"
+                >
+                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${accentColors[index % 4].bg} flex items-center justify-center mb-5 border ${accentColors[index % 4].border} ${accentColors[index % 4].text} group-hover:scale-110 transition-transform duration-300`}>
+                    {iconMap[item.icon] || item.icon}
+                  </div>
+                  <h4 className="font-display text-lg font-bold text-text-primary mb-2">
+                    {item.title}
+                  </h4>
+                  <p className="text-text-secondary text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </motion.div>
 
         {/* Extended bio in a card */}
