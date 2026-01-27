@@ -120,7 +120,7 @@ const Hero = () => {
                 <img
                   src={heroPhoto}
                   alt={portfolioData.personal.name}
-                  className="w-full h-full object-cover image-render-smooth"
+                  className="w-full h-full object-contain image-render-smooth"
                 />
               </div>
               
