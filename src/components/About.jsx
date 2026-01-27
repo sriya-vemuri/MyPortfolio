@@ -187,7 +187,7 @@ const About = () => {
               className="mb-6"
             >
               <h3 className="font-display text-3xl md:text-4xl font-bold text-text-primary">
-                I <span className="gradient-text">Specialise In</span>
+                My <span className="gradient-text">Specializations</span>
               </h3>
             </motion.div>
             
