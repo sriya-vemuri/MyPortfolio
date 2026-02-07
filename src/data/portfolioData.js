@@ -119,7 +119,7 @@ I am currently seeking opportunities in data science, data engineering or data a
     {
       title: 'Steam Metadata to Genres: Cross-Validated ML Pipeline',
       description: 'Predicts one or more genres for Steam games from metadata to support tagging and marketing decisions. Engineers features like price, platforms, languages to train and compare one-vs-rest logistic regression, random forest and SVC with 10-fold CV and threshold tuning.',
-      technologies: ['Python', 'Feature Enginnering', 'Regression'],
+      technologies: ['Python', 'Feature Engineering', 'Regression'],
       github: 'https://github.com/sriya-vemuri/Steam-Metadata-to-Genres',
       live: null,
       featured: true,
