@@ -3,9 +3,9 @@ export const portfolioData = {
     name: 'Sriya Vemuri',
     tagline: 'Master\'s student at the Fuqua School of Business, building scalable, data-driven solutions at the intersection of technology and business.',
     logo: 'SV',
-    email1: 'sriya.vemuri@duke.edu',
+    email1: 'sriya.vemurii@gmail.com',
     email2: 'sriya.vemurii@gmail.com',
-    location: 'Durham, NC',
+    location: 'East Coast USA',
     profileImage: '/assets/images/profile.jpg',
     domain: 'sriyavemuri.com',
     resume: '/SaiSriyaVemuri.pdf', 
@@ -13,7 +13,7 @@ export const portfolioData = {
 
   stats: [
     { label: 'Years Experience', value: '2+' },
-    { label: 'Location', value: 'Durham, NC' },
+    { label: 'Location', value: 'East Coast USA' },
   ],
 
   about: {
