@@ -110,7 +110,6 @@ const Skills = () => {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-accent font-mono text-sm">04</span>
             <span className="w-12 h-[1px] bg-accent/50" />
             <span className="text-text-tertiary uppercase tracking-widest text-sm">Expertise</span>
           </div>

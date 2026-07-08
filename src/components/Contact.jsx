@@ -133,7 +133,6 @@ const Contact = () => {
         >
           <div className="flex items-center justify-center gap-4 mb-4">
             <span className="w-12 h-[1px] bg-accent/50" />
-            <span className="text-accent font-mono text-sm">05</span>
             <span className="w-12 h-[1px] bg-accent/50" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary mb-4">

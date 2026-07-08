@@ -17,7 +17,7 @@ const IntroAnimation = ({ onComplete }) => {
   }, [onComplete]);
 
   const name = "Sriya Vemuri";
-  const tagline = "Data Scientist & Analytics Engineer";
+  const tagline = "Data Enthusiast";
 
   const letterVariants = {
     hidden: { opacity: 0, y: 50, rotateX: -90 },

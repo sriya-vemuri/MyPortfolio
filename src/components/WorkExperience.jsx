@@ -1,6 +1,23 @@
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolioData';
 
+const getCardTheme = (index) => (index === 1 ? 'purple' : 'accent');
+
+const themeStyles = {
+  accent: {
+    role: 'text-accent',
+    bullet: 'bg-accent',
+    dot: 'border-accent',
+    tag: 'tag text-xs',
+  },
+  purple: {
+    role: 'text-purple',
+    bullet: 'bg-purple',
+    dot: 'border-purple',
+    tag: 'tag tag-purple text-xs',
+  },
+};
+
 const WorkExperience = () => {
   return (
     <section id="experience" className="section-wrapper bg-background relative overflow-hidden">
@@ -18,22 +35,24 @@ const WorkExperience = () => {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-accent font-mono text-sm">02</span>
             <span className="w-12 h-[1px] bg-accent/50" />
             <span className="text-text-tertiary uppercase tracking-widest text-sm">Career</span>
           </div>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary">
-            Work <span className="gradient-text-warm">Experience</span>
+            Work <span className="gradient-text-purple">Experience</span>
           </h2>
         </motion.div>
 
         {/* Timeline */}
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-0 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-accent via-purple to-warm hidden md:block" />
+          <div className="absolute left-0 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-accent to-purple hidden md:block" />
 
           <div className="space-y-8">
-            {portfolioData.workExperience.map((exp, index) => (
+            {portfolioData.workExperience.map((exp, index) => {
+              const theme = themeStyles[getCardTheme(index)];
+
+              return (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, x: -30 }}
@@ -52,7 +71,7 @@ const WorkExperience = () => {
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.15 + 0.2, type: 'spring' }}
-                    className="w-4 h-4 rounded-full bg-background border-2 border-accent shadow-glow-sm"
+                    className={`w-4 h-4 rounded-full bg-background border-2 ${theme.dot} shadow-glow-sm`}
                   />
                 </div>
 
@@ -62,18 +81,18 @@ const WorkExperience = () => {
                   <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-6">
                     <div>
                       <div className="flex items-center gap-3 mb-2">
-                        <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${
-                          index === 0 ? 'bg-accent/10 text-accent' : 'bg-purple/10 text-purple'
-                        }`}>
-                          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                          </svg>
+                        <div className="w-10 h-10 rounded-xl overflow-hidden flex-shrink-0">
+                          <img
+                            src={exp.logo}
+                            alt={`${exp.company} logo`}
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                         <div>
                           <h3 className="font-display text-xl md:text-2xl font-bold text-text-primary">
                             {exp.company}
                           </h3>
-                          <p className={`font-semibold ${index === 0 ? 'text-accent' : 'text-purple'}`}>
+                          <p className={`font-semibold ${theme.role}`}>
                             {exp.role}
                           </p>
                         </div>
@@ -104,9 +123,7 @@ const WorkExperience = () => {
                         transition={{ delay: achIndex * 0.05 + index * 0.1 }}
                         className="flex items-start gap-3"
                       >
-                        <span className={`mt-2 w-1.5 h-1.5 rounded-full flex-shrink-0 ${
-                          index === 0 ? 'bg-accent' : 'bg-purple'
-                        }`} />
+                        <span className={`mt-2 w-1.5 h-1.5 rounded-full flex-shrink-0 ${theme.bullet}`} />
                         <span className="text-text-secondary leading-relaxed text-sm">
                           {achievement}
                         </span>
@@ -132,7 +149,7 @@ const WorkExperience = () => {
                           viewport={{ once: true }}
                           transition={{ delay: techIndex * 0.03 }}
                           whileHover={{ scale: 1.05 }}
-                          className="tag text-xs"
+                          className={theme.tag}
                         >
                           {tech}
                         </motion.span>
@@ -141,7 +158,8 @@ const WorkExperience = () => {
                   </div>
                 </div>
               </motion.div>
-            ))}
+            );
+            })}
           </div>
         </div>
       </div>

@@ -1,11 +1,16 @@
+import keysightLogo from '../assets/images/keysight_technologies_logo.jpeg';
+import citiLogo from '../assets/images/citi_logo.jpeg';
+import fuquaLogo from '../assets/images/fuqua_school_of_business_logo.jpeg';
+import ssnLogo from '../assets/images/ssnlogo.jpeg';
+
 export const portfolioData = {
   personal: {
     name: 'Sriya Vemuri',
-    tagline: 'Master\'s student at the Fuqua School of Business, building scalable, data-driven solutions at the intersection of technology and business.',
+    tagline: 'Graduate from the Fuqua School of Business.',
     logo: 'SV',
     email1: 'sriya.vemurii@gmail.com',
     email2: 'sriya.vemurii@gmail.com',
-    location: 'Chicago, IL',
+    location: 'Durham, NC',
     profileImage: '/assets/images/Gradpic.jpeg',
     domain: 'sriyavemuri.com',
     resume: '/SaiSriyaVemuri.pdf', 
@@ -13,19 +18,18 @@ export const portfolioData = {
 
   stats: [
     { label: 'Years Experience', value: '2+' },
-    { label: 'Location', value: 'Chicago, IL' },
+    { label: 'Location', value: 'Durham, NC' },
   ],
 
   about: {
-    bio: `I am graduating from Duke University’s Fuqua School of Business in May 2026, with a degree in the Master of Quantitative Management (Business Analytics) program. I have a strong background in software engineering and a growing specialization in data science and analytical problem-solving.
+    bio: `I am a recent graduate of Duke University\’s Fuqua School of Business with a Master of Quantitative Management in Business Analytics. I worked with Keysight Technologies for my capstone project, and built a Next Best Offer recommendation system using machine learning and extensive Tableau analysis.
 
-    Prior to my master’s program, I worked as a backend software engineer at Citibank supporting data-intensive systems within Trade and Treasury Services. I built and maintained scalable data ingestion pipelines, designed and optimized SQL-based data models, and ensured high data quality for regulatory and business-critical use cases. On a microservices project, I designed and developed modular backend services (using Spring Boot and MongoDB) to handle data ingestion, transformation, and validation across multiple components. I defined service boundaries, implemented API-based communication, ensured data consistency, and maintained observability through logging and monitoring to support analytics-ready data flows and downstream use cases.
+Prior to Fuqua, I worked in Citi\’s APAC Software Development organization, building ETL pipelines, RESTful APIs, and microservices-based applications for financial reporting and transaction data workflows. 
 
-    Over my time at Citi, I worked on two data-heavy initiatives: an Intraday Liquidity Management platform and a credit card transaction reporting system within Trade and Treasury Services. The liquidity program focused on providing near real-time visibility into cash positions and transactions across Citi entities to support funding decisions and risk oversight. The credit card reporting system consolidated transaction data into trusted, reporting-ready outputs for business stakeholders and regulatory needs. Across both, I contributed to building scalable, reliable data flows and backend services in a highly governed environment where accuracy, auditability, and consistency were critical.
+My experience is a mix of software engineering, data systems, and analytics.I have had the opportunity to contribute across all three areas, building reliable systems, improving data quality, and helping transform complex data into insights that support business decisions.
+These experiences have shaped how I approach problems  focusing on accuracy, scalability, and business impact.
 
-My interests lie at the intersection of data, technology, and business strategy. I enjoy using data to uncover patterns, generate insights, and inform decision-making—whether through exploratory analysis, building analytics-ready datasets, or translating business questions into measurable outcomes. I am particularly interested in applying statistical thinking, machine learning concepts, and analytical frameworks to real-world problems across marketing, product, and operations.
-
-I am currently seeking opportunities in data science, data engineering or data analytics roles where I can combine my engineering foundation, analytical skill set, and business training to create impactful, data-driven solutions.`   
+I love to write poetry and will never say no to a good cup of coffee :)`
 , whatIDo: [
       {
         title: 'Data Analytics Engineering',
@@ -52,10 +56,26 @@ I am currently seeking opportunities in data science, data engineering or data a
 
   workExperience: [
     {
-      company: 'Citibank',
-      role: 'Software Engineer',
+      company: 'Keysight Technologies',
+      role: 'Business Analytics Consultant',
+      period: '2026 - 2026',
+      location: 'Durham, NC',
+      logo: keysightLogo,
+      achievements: [
+       'Worked with Keysight Technologies on a Next Best Offer recommendation project to support cross-sell and upsell opportunities for the sales team.',
+       'Built a customer-level recommendation model using product, customer, and transaction data to identify the top 10 products each client was most likely to purchase next.',
+       'Engineered and validated 55 customer, product, and interaction-level features, with LambdaRank delivering the strongest ranking performance.',
+       'Created Tableau dashboards and conducted subcategory, regional, threshold, and sensitivity analyses to identify revenue opportunities and translate model outputs into business insights.',
+      
+        ],
+      technologies: ['Python', 'SQL', 'Machine Learning', 'Recommendation Systems', 'LambdaRank', 'Tableau', 'Customer Analytics'],
+    },
+    {
+      company: 'Citi',
+      role: 'Technical Analyst',
       period: '2023 - 2025',
       location: 'Chennai, India',
+      logo: citiLogo,
       achievements: [
        /* 'Built and maintained production-grade Java/SpringBoot services supporting data ingestion, transformation, regulatory reporting workflows, ensuring 95% system uptime for business-critical processes',
         'Redesigned and optimized SQL table schemas within ETL pipelines to improve data consistency, accessibility, and downstream reporting performance',
@@ -66,20 +86,26 @@ I am currently seeking opportunities in data science, data engineering or data a
         'Built and deployed scalable backend services using Java, SpringBoot and MongoDB, contributing to stable CI/CD pipelines and consistent releases across environments',
         'Developed JUnit test cases to validate business logic and enforce coding standards and participated in code reviews to improve code quality and reduce regression issues',
         'Collaborated within an Agile Scrum team, working closely with engineers, QA, and product stakeholders to deliver production-ready data-driven features on schedule',
-     */ 'Designed MySQL entity relationship models for reporting and analytics, improving query performance by 40% through indexing and normalized schema design',
+     */ /*'Designed MySQL entity relationship models for reporting and analytics, improving query performance by 40% through indexing and normalized schema design',
         'Standardized Jenkins CI CD for data pipeline deployments (build, test, package, promote), reducing failed releases by 20% and improving release governance',
         'Built reusable Python modules for transformation, validation, and configuration driven runs, enabling 10 plus pipelines to share common logic and lowering maintenance effort by 25%',
         'Built a transaction network style visualization graph to support analyst investigation, reducing ad hoc data pulls by 25% and improving self serve analytics',
         'Integrated Hadoop and Spark outputs into microservices APIs, improving data freshness from hourly to under 10 minutes for near real time decision support',
         'Integrated ISO 20022 CAMT message support end to end (ingestion, parsing, validation, transformation), increasing message coverage from 0 to 95% for the new format and improving data standardization across services',
+      */'Worked on Citi\’s Intraday Liquidity Management platform, a global financial technology product used across 80+ countries to support liquidity reporting and transaction monitoring',
+      'Built and improved data workflows that transformed high-volume financial transaction data into reliable reporting outputs for business and operations teams.',
+      'Improved reporting reliability and performance through SQL optimization, Python validation modules, data quality checks, and reusable ETL logic.',
+      'Supported near real-time decision-making by integrating Hadoop and Spark outputs into reporting workflows, reducing data latency to under 10 minutes.',
+      'Worked with ISO 20022 CAMT message data to improve reporting consistency, data standardization, and downstream liquidity analysis.',    
       ],
-      technologies: ['SQL', 'MongoDB', 'Java', 'Spring Boot', 'Bit Bucket', 'Kibana', 'Jenkins', 'Deployment'],
+      technologies: ['Python', 'SQL', 'Java', 'Spring Boot', 'ETL', 'Spark', 'Hadoop', 'MongoDB', 'Jenkins', 'Data Validation'],
     },
     {
-      company: 'Citibank',
+      company: 'Citi',
       role: 'Intern',
       period: '2022 - 2022',
       location: 'Chennai, India',
+      logo: citiLogo,
       achievements: [
         'Developed an internal tool to automate the upload and retrieval of objects from Amazon S3 cloud storage, reducing manual effort and processing time by 75%',
         'Implemented JSON comparison and CSV diff-generation features in Java, SpringBoot and AngularJS enhancing data validation and usability for internal users',
@@ -94,6 +120,7 @@ I am currently seeking opportunities in data science, data engineering or data a
       institution: 'Fuqua School of Business',
       period: 'May 2026',
       location: 'Durham, NC',
+      logo: fuquaLogo,
       description: 'Specialized in Marketing Analytics and Business Analytics with a focus on data-driven solutions using Machine Learning, AI and analytical tools',
       achievements: ['Led multiple collaborative projects'],
     },
@@ -102,6 +129,7 @@ I am currently seeking opportunities in data science, data engineering or data a
       institution: 'SSN College of Engineering',
       period: 'May 2023',
       location: 'Chennai, India',
+      logo: ssnLogo,
       description: 'Focus on Software Engineering, Data Structures, and Machine Learning',
       achievements: ['Graduated with Distinction', 'Editor of the College Magazine'],
     },

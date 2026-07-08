@@ -72,7 +72,6 @@ const About = () => {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-accent font-mono text-sm">01</span>
             <span className="w-12 h-[1px] bg-accent/50" />
             <span className="text-text-tertiary uppercase tracking-widest text-sm">About</span>
           </div>
@@ -102,11 +101,11 @@ const About = () => {
               </div>
               <div>
                 <h3 className="font-display text-2xl font-bold text-text-primary mb-1">My Story</h3>
-                <p className="text-text-tertiary text-sm">Background & Journey</p>
+                <p className="text-text-tertiary text-sm">Background</p>
               </div>
             </div>
             <div className="space-y-4 text-text-secondary leading-relaxed">
-              {portfolioData.about.bio.split('\n\n').slice(0, 2).map((paragraph, index) => (
+              {portfolioData.about.bio.split('\n\n').map((paragraph, index) => (
                 paragraph.trim() && (
                   <p key={index}>{paragraph.trim()}</p>
                 )
@@ -156,7 +155,7 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-text-tertiary text-sm mb-1">Experience</p>
-                    <p className="text-text-primary font-medium">2+ Years at Citibank</p>
+                    <p className="text-text-primary font-medium">2+ years at Citi</p>
                   </div>
                 </div>
               </div>
@@ -211,27 +210,6 @@ const About = () => {
               ))}
             </div>
           </motion.div>
-        </motion.div>
-
-        {/* Extended bio in a card */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-6 glass-card p-8 lg:p-10"
-        >
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-text-tertiary text-sm uppercase tracking-wider">More about my background</span>
-          </div>
-          <div className="grid lg:grid-cols-2 gap-8 text-text-secondary leading-relaxed">
-            {portfolioData.about.bio.split('\n\n').slice(2).map((paragraph, index) => (
-              paragraph.trim() && (
-                <p key={index}>{paragraph.trim()}</p>
-              )
-            ))}
-          </div>
         </motion.div>
       </div>
     </section>

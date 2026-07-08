@@ -224,6 +224,12 @@
     color: #00d4aa;
   }
 
+  .tag-purple:hover {
+    background: rgba(168, 85, 247, 0.1);
+    border-color: rgba(168, 85, 247, 0.3);
+    color: #a855f7;
+  }
+
   /* Navigation */
   .nav-link {
     @apply relative text-text-secondary font-medium;

@@ -167,7 +167,7 @@ const Hero = () => {
           >
             <span className="w-12 h-[2px] bg-gradient-to-r from-accent to-transparent" />
             <span className="text-accent font-mono text-sm tracking-wider uppercase">
-              Data Scientist & Full Stack Developer
+              Data Enthusiast
             </span>
           </motion.div>
 

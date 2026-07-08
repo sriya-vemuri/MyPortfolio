@@ -18,7 +18,6 @@ const Education = () => {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-4">
-            <span className="text-accent font-mono text-sm">02.1</span>
             <span className="w-12 h-[1px] bg-accent/50" />
             <span className="text-text-tertiary uppercase tracking-widest text-sm">Academic</span>
           </div>
@@ -47,14 +46,12 @@ const Education = () => {
 
                 {/* Institution icon */}
                 <div className="flex items-start gap-4 mb-6">
-                  <div className={`w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 ${
-                    index === 0 ? 'bg-accent/10 text-accent' : 'bg-purple/10 text-purple'
-                  }`}>
-                    <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-                    </svg>
+                  <div className="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0">
+                    <img
+                      src={edu.logo}
+                      alt={`${edu.institution} logo`}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="flex-1">
                     <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
