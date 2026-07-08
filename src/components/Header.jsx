@@ -120,10 +120,16 @@ const Header = () => {
                 className="flex items-center gap-3 group"
               >
                 <div className="relative">
-                  <div className="w-11 h-11 bg-gradient-to-br from-accent to-accent-dark rounded-xl flex items-center justify-center font-display font-bold text-background text-lg shadow-glow-sm">
-                    {portfolioData.personal.logo}
+                  <div className="w-10 h-10 rounded-lg overflow-hidden ring-1 ring-white/10">
+                    <img
+                      src={portfolioData.personal.logo}
+                      alt={portfolioData.personal.name}
+                      className="w-full h-full object-cover object-center opacity-90 image-render-smooth"
+                      width={40}
+                      height={40}
+                      decoding="async"
+                    />
                   </div>
-                  <div className="absolute inset-0 bg-accent/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
                 <span className="hidden sm:block font-heading font-semibold text-text-primary">
                   {portfolioData.personal.name.split(' ')[0]}

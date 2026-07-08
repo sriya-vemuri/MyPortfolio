@@ -22,15 +22,22 @@ const Footer = () => {
             viewport={{ once: true }}
             className="flex items-center gap-4"
           >
-            <div className="w-12 h-12 bg-gradient-to-br from-accent to-accent-dark rounded-xl flex items-center justify-center font-display font-bold text-background text-lg shadow-glow-sm">
-              {portfolioData.personal.logo}
+            <div className="w-10 h-10 rounded-lg overflow-hidden ring-1 ring-white/10 flex-shrink-0">
+              <img
+                src={portfolioData.personal.logo}
+                alt={portfolioData.personal.name}
+                className="w-full h-full object-cover object-center opacity-90 image-render-smooth"
+                width={40}
+                height={40}
+                decoding="async"
+              />
             </div>
             <div>
               <p className="font-display font-semibold text-text-primary">
                 {portfolioData.personal.name}
               </p>
               <p className="text-text-tertiary text-sm">
-                Data Scientist & Analyst
+                Data Enthusiast
               </p>
             </div>
           </motion.div>

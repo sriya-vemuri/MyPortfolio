@@ -2,12 +2,13 @@ import keysightLogo from '../assets/images/keysight_technologies_logo.jpeg';
 import citiLogo from '../assets/images/citi_logo.jpeg';
 import fuquaLogo from '../assets/images/fuqua_school_of_business_logo.jpeg';
 import ssnLogo from '../assets/images/ssnlogo.jpeg';
+import logoPhoto from '../assets/images/logophoto.jpeg';
 
 export const portfolioData = {
   personal: {
     name: 'Sriya Vemuri',
     tagline: 'Graduate from the Fuqua School of Business.',
-    logo: 'SV',
+    logo: logoPhoto,
     email1: 'sriya.vemurii@gmail.com',
     email2: 'sriya.vemurii@gmail.com',
     location: 'Durham, NC',
@@ -122,7 +123,7 @@ I love to write poetry and will never say no to a good cup of coffee :)`
       location: 'Durham, NC',
       logo: fuquaLogo,
       description: 'Specialized in Marketing Analytics and Business Analytics with a focus on data-driven solutions using Machine Learning, AI and analytical tools',
-      achievements: ['Led multiple collaborative projects'],
+      achievements: ['Led multiple collaborative projects','8th place in NCSAC'],
     },
     {
       degree: 'Bachelor in Technology in Information Technology',

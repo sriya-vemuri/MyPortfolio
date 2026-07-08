@@ -91,7 +91,7 @@ const About = () => {
           {/* Main Bio Card - Large */}
           <motion.div
             variants={itemVariants}
-            className="lg:col-span-8 glass-card glass-card-hover p-8 lg:p-10"
+            className="lg:col-span-12 glass-card glass-card-hover p-8 lg:p-10"
           >
             <div className="flex items-start gap-4 mb-6">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center border border-accent/20">
@@ -114,6 +114,7 @@ const About = () => {
           </motion.div>
 
           {/* Quick Stats Card */}
+          {/*
           <motion.div
             variants={itemVariants}
             className="lg:col-span-4 glass-card glass-card-hover p-8"
@@ -161,6 +162,7 @@ const About = () => {
               </div>
             </div>
           </motion.div>
+          */}
         </motion.div>
 
         {/* I Specialise In Section */}
