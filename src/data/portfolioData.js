@@ -5,15 +5,15 @@ export const portfolioData = {
     logo: 'SV',
     email1: 'sriya.vemurii@gmail.com',
     email2: 'sriya.vemurii@gmail.com',
-    location: 'East Coast USA',
-    profileImage: '/assets/images/profile.jpg',
+    location: 'Chicago, IL',
+    profileImage: '/assets/images/Gradpic.jpeg',
     domain: 'sriyavemuri.com',
     resume: '/SaiSriyaVemuri.pdf', 
   },
 
   stats: [
     { label: 'Years Experience', value: '2+' },
-    { label: 'Location', value: 'East Coast USA' },
+    { label: 'Location', value: 'Chicago, IL' },
   ],
 
   about: {

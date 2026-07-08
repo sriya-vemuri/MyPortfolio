@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolioData';
-import heroPhoto from '../assets/images/herophoto.jpg';
+import heroPhoto from '../assets/images/Gradpic.jpeg';
 
 const Hero = () => {
   const handleResumeDownload = async (e) => {
@@ -120,7 +120,7 @@ const Hero = () => {
                 <img
                   src={heroPhoto}
                   alt={portfolioData.personal.name}
-                  className="w-full h-full object-contain image-render-smooth"
+                  className="w-full h-full object-cover object-[35%_center] image-render-smooth"
                 />
               </div>
               
