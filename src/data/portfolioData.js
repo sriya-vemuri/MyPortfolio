@@ -59,7 +59,7 @@ I love to write poetry and will never say no to a good cup of coffee :)`
     {
       company: 'Keysight Technologies',
       role: 'Business Analytics Consultant',
-      period: '2026 - 2026',
+      period: 'March 2026 - April 2026',
       location: 'Durham, NC',
       logo: keysightLogo,
       achievements: [
@@ -74,7 +74,7 @@ I love to write poetry and will never say no to a good cup of coffee :)`
     {
       company: 'Citi',
       role: 'Technical Analyst',
-      period: '2023 - 2025',
+      period: 'June 2023 - June 2025',
       location: 'Chennai, India',
       logo: citiLogo,
       achievements: [
@@ -104,7 +104,7 @@ I love to write poetry and will never say no to a good cup of coffee :)`
     {
       company: 'Citi',
       role: 'Intern',
-      period: '2022 - 2022',
+      period: 'May 2022 - July 2022',
       location: 'Chennai, India',
       logo: citiLogo,
       achievements: [
@@ -151,33 +151,33 @@ I love to write poetry and will never say no to a good cup of coffee :)`
       technologies: ['Python', 'Feature Engineering', 'Regression'],
       github: 'https://github.com/sriya-vemuri/Steam-Metadata-to-Genres',
       live: null,
-      featured: true,
-    },
-    /*{
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard',
-      technologies: ['React', 'Next.js', 'Stripe', 'PostgreSQL', 'AWS'],
-      github: 'https://github.com/username/ecommerce',
-      live: 'https://ecommerce-demo.com',
       featured: false,
     },
     {
-      title: 'Data Processing Framework',
-      description: 'High-performance framework for processing large-scale datasets with distributed computing',
-      technologies: ['Python', 'Apache Spark', 'Airflow', 'PostgreSQL'],
+      title: 'Lead Quality Analytics Dashboard',
+      description: 'Used Python, logistic regression, and Tableau to identify lead conversion drivers and recommend campaign, traffic, and segment reallocation strategies.',
+      technologies: ['Tableau', 'Python','Customer Analytics'],
+      github: 'https://github.com/sriya-vemuri/LeadQualityAnalysis',
+      live: null,
+      featured: true,
+    },
+    {
+      title: 'Makeup Style Recommender System',
+      description: 'Fine-tuned a ResNet-50 model to predict facial attributes from images and convert model outputs into confidence-based makeup style recommendations.',
+      technologies: ['Computer Vision'],
       github: 'https://github.com/username/data-framework',
       live: null,
       featured: false,
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative task management application with real-time updates, notifications, and team collaboration features',
-      technologies: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
-      github: 'https://github.com/username/task-app',
-      live: 'https://task-demo.com',
+      title: 'JobStream',
+      description: 'JobStream lets users submit long-running jobs, process them in the background, track their status, retry failures, and store the final results reliably.',
+      technologies: ['Spring Boot', 'Redis queues', 'PostgreSQL', 'MinIO'],
+      github: 'https://github.com/sriya-vemuri/JobStream',
+      live: null,
       featured: false,
     },
-    {
+    /*{
       title: 'API Gateway Service',
       description: 'Microservices API gateway with authentication, rate limiting, and request routing',
       technologies: ['Node.js', 'Express', 'Redis', 'Docker', 'Nginx'],

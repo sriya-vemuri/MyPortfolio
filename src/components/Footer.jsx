@@ -26,7 +26,7 @@ const Footer = () => {
               <img
                 src={portfolioData.personal.logo}
                 alt={portfolioData.personal.name}
-                className="w-full h-full object-cover object-center opacity-90 image-render-smooth"
+                className="w-full h-full object-cover object-center opacity-90 brightness-90 image-render-smooth"
                 width={40}
                 height={40}
                 decoding="async"
