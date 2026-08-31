@@ -3,6 +3,7 @@ import citiLogo from '../assets/images/citi_logo.jpeg';
 import fuquaLogo from '../assets/images/fuqua_school_of_business_logo.jpeg';
 import ssnLogo from '../assets/images/ssnlogo.jpeg';
 import logoPhoto from '../assets/images/logophoto.jpeg';
+import { desc } from 'framer-motion/client';
 
 export const portfolioData = {
   personal: {
@@ -11,7 +12,7 @@ export const portfolioData = {
     logo: logoPhoto,
     email1: 'sriya.vemurii@gmail.com',
     email2: 'sriya.vemurii@gmail.com',
-    location: 'Durham, NC',
+    location: 'Chicago, IL',
     profileImage: '/assets/images/Gradpic.jpeg',
     domain: 'sriyavemuri.com',
     resume: '/SaiSriyaVemuri.pdf', 
@@ -19,7 +20,7 @@ export const portfolioData = {
 
   stats: [
     { label: 'Years Experience', value: '2+' },
-    { label: 'Location', value: 'Durham, NC' },
+    { label: 'Location', value: 'Chicago, IL' },
   ],
 
   about: {
@@ -176,6 +177,22 @@ I love to write poetry and will never say no to a good cup of coffee :)`
       github: 'https://github.com/sriya-vemuri/JobStream',
       live: null,
       featured: false,
+    },
+    {
+      title: 'Price Pilot',
+      description: 'Price Pilot is a tool that helps businesses optimize their pricing strategies by analyzing market trends and customer behavior.',
+      technologies: ['React', 'FastAPI', 'PostgreSQL', 'Supabase Auth', 'Tavily API'],
+      github: 'https://github.com/sriya-vemuri/PricePilot',
+      live: 'https://pricepilotintelligence.vercel.app/',
+      featured: true,
+    },
+    {
+      title: 'Prompt Vault',
+      description: 'A personal writing-inspiration vault that turns saved images into reusable prompts using OCR and human-in-the-loop review.',
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma', 'Neon PostgreSQL', 'Tesseract.js'],
+      github: 'https://github.com/sriya-vemuri/Prompt-Vault',
+      live: 'secretpromptvault.vercel.app',
+      featured: true,
     },
     /*{
       title: 'API Gateway Service',
