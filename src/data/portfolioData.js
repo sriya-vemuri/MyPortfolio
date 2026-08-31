@@ -3,6 +3,8 @@ import citiLogo from '../assets/images/citi_logo.jpeg';
 import fuquaLogo from '../assets/images/fuqua_school_of_business_logo.jpeg';
 import ssnLogo from '../assets/images/ssnlogo.jpeg';
 import logoPhoto from '../assets/images/logophoto.jpeg';
+import pricePilotImage from '../assets/images/Price Pilot.png';
+import promptVaultImage from '../assets/images/Prompt Vault.png';
 import { desc } from 'framer-motion/client';
 
 export const portfolioData = {
@@ -144,7 +146,7 @@ I love to write poetry and will never say no to a good cup of coffee :)`
       technologies: ['Spring Boot', 'MySQL'],
       github: 'https://github.com/sriya-vemuri/LeadAnalyticsDashboard',
       live:null,
-      featured: true,
+      featured: false,
     },
     {
       title: 'Steam Metadata to Genres: Cross-Validated ML Pipeline',
@@ -160,7 +162,7 @@ I love to write poetry and will never say no to a good cup of coffee :)`
       technologies: ['Tableau', 'Python','Customer Analytics'],
       github: 'https://github.com/sriya-vemuri/LeadQualityAnalysis',
       live: null,
-      featured: true,
+      featured: false,
     },
     {
       title: 'Makeup Style Recommender System',
@@ -184,6 +186,7 @@ I love to write poetry and will never say no to a good cup of coffee :)`
       technologies: ['React', 'FastAPI', 'PostgreSQL', 'Supabase Auth', 'Tavily API'],
       github: 'https://github.com/sriya-vemuri/PricePilot',
       live: 'https://pricepilotintelligence.vercel.app/',
+      image: pricePilotImage,
       featured: true,
     },
     {
@@ -191,7 +194,8 @@ I love to write poetry and will never say no to a good cup of coffee :)`
       description: 'A personal writing-inspiration vault that turns saved images into reusable prompts using OCR and human-in-the-loop review.',
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma', 'Neon PostgreSQL', 'Tesseract.js'],
       github: 'https://github.com/sriya-vemuri/Prompt-Vault',
-      live: 'secretpromptvault.vercel.app',
+      live: 'https://secretpromptvault.vercel.app/',
+      image: promptVaultImage,
       featured: true,
     },
     /*{

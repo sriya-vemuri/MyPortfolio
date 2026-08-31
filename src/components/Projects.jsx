@@ -70,12 +70,20 @@ const Projects = () => {
               className="group relative"
             >
               <div className="glass-card overflow-hidden h-full">
-                {/* Gradient header */}
+                {/* Project image header */}
                 <div className={`h-48 relative overflow-hidden ${
                   index === 0 
                     ? 'bg-gradient-to-br from-accent/20 via-accent/10 to-transparent' 
                     : 'bg-gradient-to-br from-purple/20 via-purple/10 to-transparent'
                 }`}>
+                  {project.image && (
+                    <img
+                      src={project.image}
+                      alt={`${project.title} preview`}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
                   {/* Animated pattern */}
                   <div className="absolute inset-0 bg-grid opacity-20" />
                   <motion.div
@@ -132,8 +140,9 @@ const Projects = () => {
                   <h3 
                     className="font-display text-2xl font-bold text-text-primary mb-3 group-hover:text-accent transition-colors cursor-pointer"
                     onClick={() => {
-                      if (project.github) {
-                        window.open(project.github, '_blank', 'noopener,noreferrer');
+                      const projectUrl = project.live || project.github;
+                      if (projectUrl) {
+                        window.open(projectUrl, '_blank', 'noopener,noreferrer');
                       }
                     }}
                   >
